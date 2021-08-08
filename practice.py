@@ -30,8 +30,14 @@ user = {
 #   print(count)
   
   
-my_range = list(range(10, 0 ,-2))
-# print(my_range)
+# my_range = list(range(10, 0 ,-2))
+# # print(my_range)
 
-for _ in my_range:
-  print(_)
+# for _ in my_range:
+#   print(_)
+
+
+# enumerate
+for i, char in enumerate(list(range(100))):
+  if char == 50:
+    print(f"this is the index of 50 is:, {i}")
