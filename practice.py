@@ -47,19 +47,42 @@ user = {"name": "Golem", "age": 5006, "can_swim": False}
 
 # #Exercise!
 # Display the image below to the right hand side where the 0 is going to be ' ', and the 1 is going to be '*'. This will reveal an image!
-picture = [
-    [0, 0, 0, 1, 0, 0, 0],
-    [0, 0, 1, 1, 1, 0, 0],
-    [0, 1, 1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 1, 1, 1],
-    [0, 0, 0, 1, 0, 0, 0],
-    [0, 0, 0, 1, 0, 0, 0],
-]
+# picture = [
+#     [0, 0, 0, 1, 0, 0, 0],
+#     [0, 0, 1, 1, 1, 0, 0],
+#     [0, 1, 1, 1, 1, 1, 0],
+#     [1, 1, 1, 1, 1, 1, 1],
+#     [0, 0, 0, 1, 0, 0, 0],
+#     [0, 0, 0, 1, 0, 0, 0],
+# ]
 
-for row in picture:
-    for pixel in row:
-        if not pixel:
-            print(" ", end=" ")
-        elif pixel:
-            print("*", end=" ")
-    print(" ")
+# for row in picture:
+#     for pixel in row:
+#         if not pixel:
+#             print(" ", end=" ")
+#         elif pixel:
+#             print("*", end=" ")
+#     print(" ")
+
+
+#  sets
+# some_list = ["a", "b", "b", "c", "d", "m", "n", "n"]
+
+# # new_list = list(set(some_list))
+# # print(new_list)
+# # # with out a set
+# answer = []
+# #  with out a set
+# for item in some_list:
+#     if item not in answer:
+#         answer.append(item)
+
+# print(answer)
+
+
+def say_hello():
+    response = input("Who are you ?")
+    print(f"Hello {response}")
+
+
+say_hello()
