@@ -58,8 +58,8 @@ picture = [
 
 for row in picture:
     for pixel in row:
-        if pixel == 0:
+        if not pixel:
             print(" ", end=" ")
-        elif pixel == 1:
+        elif pixel:
             print("*", end=" ")
     print(" ")
