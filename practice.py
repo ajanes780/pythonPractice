@@ -1,4 +1,4 @@
-print("Hello Aaron ")
+# print("Hello Aaron ")
 
 # for item in [1,2,3,4,5,6,7]:
 #   print(item)
@@ -22,9 +22,16 @@ user = {
 #   if key == "name":
 #     print(value)
   
-my_list= [1,2,3,4,5,6,7,8,9]
+# my_list= [1,2,3,4,5,6,7,8,9]
 
-count = 0 
-for item in my_list:
-  count += item
-  print(count)
+# count = 0 
+# for item in my_list:
+#   count += item
+#   print(count)
+  
+  
+my_range = list(range(10, 0 ,-2))
+# print(my_range)
+
+for _ in my_range:
+  print(_)
