@@ -2,34 +2,29 @@
 
 # for item in [1,2,3,4,5,6,7]:
 #   print(item)
-  
-user = {
-  "name": "Golem",
-  "age": 5006,
-  "can_swim": False
-}
+
+user = {"name": "Golem", "age": 5006, "can_swim": False}
 
 # for item in user.items():
 #   print(item)
-  
-  
+
 
 # for item in user.values():
 #   print(item)
-  
-  
+
+
 # for key, value in user.items():
 #   if key == "name":
 #     print(value)
-  
+
 # my_list= [1,2,3,4,5,6,7,8,9]
 
-# count = 0 
+# count = 0
 # for item in my_list:
 #   count += item
 #   print(count)
-  
-  
+
+
 # my_range = list(range(10, 0 ,-2))
 # # print(my_range)
 
@@ -38,6 +33,14 @@ user = {
 
 
 # enumerate
-for i, char in enumerate(list(range(100))):
-  if char == 50:
-    print(f"this is the index of 50 is:, {i}")
+# for i, char in enumerate(list(range(100))):
+#   if char == 50:
+#     print(f"this is the index of 50 is:, {i}")
+
+# while loop
+
+while True:
+    response = input("Say something: ")
+    if response == "bye":
+        print(response)
+    break
