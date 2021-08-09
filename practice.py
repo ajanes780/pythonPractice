@@ -120,6 +120,16 @@ user = {"name": "Golem", "age": 5006, "can_swim": False}
 # walrus - really cool looks like GOlang
 # :=
 
-a = "hellloooooooooooo"
-if (n := len(a)) > 10:
-    print(f"Too long {n} elements")
+# a = "hellloooooooooooo"
+# if (n := len(a)) > 10:
+#     print(f"Too long {n} elements")
+
+total = 0
+
+
+def count(total):
+    total += 1
+    return total
+
+
+print(count(total))
