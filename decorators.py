@@ -6,13 +6,13 @@ user1 = {
 
 
 def authenticated(fn):
-    def wrap_func(user1):
-        if user1["valid"] == True:
+    def wrap_func(fn):
+        if user1.get("valid"):
             print("Autherized")
-            return wrap_func
         else:
             print("Not authorized")
 
+    fn(fn)
     return wrap_func
 
 
