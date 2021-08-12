@@ -4,15 +4,16 @@ user1 = {
     "valid": True,  # changing this will either run or not run the message_friends function.
 }
 
-
+# decorator pattern
 def authenticated(fn):
-    def wrap_func(fn):
-        if user1.get("valid"):
-            print("Autherized")
-        else:
-            print("Not authorized")
+    def wrap_func(*args, **kwargs):
+        for item in args:
+            if item.get("valid"):
+                print("Authorized")
+                fn(*args, **kwargs)
+            else:
+                print("Not authorized")
 
-    fn(fn)
     return wrap_func
 
 
