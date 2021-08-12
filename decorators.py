@@ -6,10 +6,16 @@ user1 = {
 
 
 def authenticated(fn):
-   
-   
-   
-   
+    def wrap_func(user1):
+        if user1["valid"] == True:
+            print("Autherized")
+            return wrap_func
+        else:
+            print("Not authorized")
+
+    return wrap_func
+
+
 @authenticated
 def message_friends(user):
     print("message has been sent")
