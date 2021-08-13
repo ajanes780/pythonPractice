@@ -8,5 +8,9 @@ def fibonacci_number(number):
         b = temp + b
 
 
-for x in fibonacci_number(21):
-    print(x)
+# for i in fibonacci_number(21):
+#     print(i)
+
+
+my_list = [i for i in fibonacci_number(21)]
+print(my_list)
